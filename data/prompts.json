@@ -1,0 +1,1429 @@
+[
+  {
+    "id": 1,
+    "title": "Debug Python Code",
+    "slug": "debug-python-code",
+    "description": "Debug Python scripts effectively.",
+    "content": "Act as an expert Python developer.\n\nContext:\nUse this prompt when you have a piece of [LANGUAGE] code that is producing errors, throwing exceptions, or returning unexpected results. It helps quickly identify the root cause and provides a corrected version with explanations.\n\nObjective:\nTo analyze the provided [CODE] snippet, identify logical or syntax errors, and offer a robust, optimized fix.\n\nInstructions:\n1. Analyze the [CODE] provided by the user carefully.\n2. Identify any syntax errors, logical bugs, or performance bottlenecks.\n3. Explain the root cause of the issue clearly.\n4. Provide the corrected code, ensuring it follows PEP 8 standards.\n5. Suggest any relevant best practices to prevent similar issues in the future.\n\nConstraints:\n- Do not rewrite the entire logic unless fundamentally flawed.\n- Keep explanations concise.\n- Ensure the corrected code is executable.\n\nOutput Format:\n- Summary of the problem.\n- Root Cause Analysis.\n- Corrected Code snippet.\n- Best practices tip.",
+    "category": "Development",
+    "subcategory": "Python",
+    "difficulty": "Intermediate",
+    "tags": [
+      "python",
+      "debug",
+      "code"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "GitHub Copilot"
+    ],
+    "useCases": [
+      "Debugging",
+      "Code Quality"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-09-01",
+    "copyCount": 2840
+  },
+  {
+    "id": 2,
+    "title": "Explain Complex Code",
+    "slug": "explain-complex-code",
+    "description": "Get simple explanations for complex code.",
+    "content": "Act as a senior software engineer and mentor.\n\nContext:\nUse this when encountering a dense, highly abstracted, or poorly documented piece of [CODE]. It breaks down complex logic into understandable concepts tailored to a specific [AUDIENCE].\n\nObjective:\nTo demystify complex algorithms or architectural patterns, making them accessible to junior developers or non-technical stakeholders.\n\nInstructions:\n1. Review the provided [CODE].\n2. Break down the code execution step-by-step.\n3. Explain the purpose of key variables, functions, and loops.\n4. Use analogies if the logic is heavily abstracted.\n5. Summarize the overall purpose of the script in one sentence.\n\nConstraints:\n- Adapt the complexity of the explanation to the requested [AUDIENCE].\n- Avoid using excessive jargon without defining it.\n\nOutput Format:\n- High-level summary.\n- Step-by-step breakdown.\n- Analogy (if applicable).\n- Time and Space Complexity analysis (if relevant).",
+    "category": "Development",
+    "subcategory": "Code Review",
+    "difficulty": "Beginner",
+    "tags": [
+      "explain",
+      "code",
+      "learning"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Learning",
+      "Documentation"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-09-02",
+    "copyCount": 3210
+  },
+  {
+    "id": 3,
+    "title": "Refactor Legacy Code",
+    "slug": "refactor-legacy-code",
+    "description": "Modernize and clean up legacy code.",
+    "content": "Act as an expert software architect.\n\nContext:\nIdeal for scenarios where you need to modernize an old [LANGUAGE] codebase without changing its external behavior. Ensures code is readable, maintainable, and efficient.\n\nObjective:\nRefactor the provided [CODE] to adhere to modern design patterns, improve readability, and eliminate technical debt.\n\nInstructions:\n1. Analyze the given legacy [CODE].\n2. Identify anti-patterns, duplicated logic, and inefficiencies.\n3. Apply modern language features and clean code principles (SOLID, DRY).\n4. Refactor the code step-by-step, explaining the rationale behind each change.\n5. Ensure backward compatibility is maintained.\n\nConstraints:\n- Do not alter the core business logic or expected output.\n- Add comments for any complex refactored logic.\n\nOutput Format:\n- List of identified anti-patterns.\n- Refactored [CODE] block.\n- Explanation of changes and benefits.",
+    "category": "Development",
+    "subcategory": "Code Review",
+    "difficulty": "Advanced",
+    "tags": [
+      "refactor",
+      "legacy",
+      "clean-code"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "GitHub Copilot"
+    ],
+    "useCases": [
+      "Code Quality",
+      "Modernization"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-03",
+    "copyCount": 1890
+  },
+  {
+    "id": 4,
+    "title": "Generate Unit Tests",
+    "slug": "generate-unit-tests",
+    "description": "Automatically generate tests for your code.",
+    "content": "Act as a QA Automation Engineer.\n\nContext:\nUse this prompt to quickly scaffold unit tests for a specific [CODE] block in [LANGUAGE]. It helps ensure test coverage and software reliability.\n\nObjective:\nWrite comprehensive unit tests covering positive paths, negative paths, and edge cases for the provided code.\n\nInstructions:\n1. Analyze the core functionality and parameters of the [CODE].\n2. Identify the happy path, common error cases, and edge cases.\n3. Write unit tests using a standard testing framework for [LANGUAGE] (e.g., pytest, Jest, JUnit).\n4. Include mock objects or stubs if the code relies on external dependencies.\n5. Add assertions that clearly validate expected behaviors.\n\nConstraints:\n- Ensure tests are independent and deterministic.\n- Do not test external APIs; mock them instead.\n\nOutput Format:\n- Test strategy overview.\n- The unit test code block.\n- Instructions on how to run the tests.",
+    "category": "Development",
+    "subcategory": "Testing",
+    "difficulty": "Intermediate",
+    "tags": [
+      "testing",
+      "unit-test",
+      "qa"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "GitHub Copilot"
+    ],
+    "useCases": [
+      "QA",
+      "Test Coverage"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-09-04",
+    "copyCount": 2650
+  },
+  {
+    "id": 5,
+    "title": "Perform Code Review",
+    "slug": "perform-code-review",
+    "description": "Conduct automated code reviews.",
+    "content": "Act as a strict but constructive Principal Engineer.\n\nContext:\nUse this before submitting a pull request to catch common mistakes, security vulnerabilities, and stylistic issues in [LANGUAGE].\n\nObjective:\nReview the provided [CODE] snippet for best practices, security, and performance, providing actionable feedback.\n\nInstructions:\n1. Review the [CODE] for potential bugs and logic flaws.\n2. Check for adherence to language-specific style guides.\n3. Identify any security vulnerabilities (e.g., SQL injection, XSS).\n4. Evaluate performance and memory management.\n5. Provide constructive feedback and suggest specific code improvements.\n\nConstraints:\n- Be objective and polite.\n- Focus on high-impact issues rather than nitpicks unless explicitly asked.\n\nOutput Format:\n- High-level summary of the code quality.\n- Bulleted list of critical issues (if any).\n- Bulleted list of minor suggestions.\n- Improved code snippet incorporating the feedback.",
+    "category": "Development",
+    "subcategory": "Code Review",
+    "difficulty": "Intermediate",
+    "tags": [
+      "review",
+      "best-practices",
+      "code"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Code Quality",
+      "Security"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-05",
+    "copyCount": 2100
+  },
+  {
+    "id": 6,
+    "title": "Optimize SQL Query",
+    "slug": "optimize-sql-query",
+    "description": "Improve database query performance.",
+    "content": "Act as a Senior Database Administrator.\n\nContext:\nUse this prompt when dealing with slow-running SQL queries. It helps analyze execution plans implicitly and suggests indexing or structural improvements.\n\nObjective:\nOptimize the provided [CODE] query to reduce execution time and resource consumption on the database.\n\nInstructions:\n1. Analyze the provided SQL query and schema context (if provided).\n2. Identify potential bottlenecks like full table scans, Cartesian products, or inefficient subqueries.\n3. Suggest query rewrites using JOINs, CTEs, or window functions where appropriate.\n4. Recommend missing indexes that could speed up the execution.\n5. Explain why the optimized version is better.\n\nConstraints:\n- Ensure the optimized query returns the exact same result set.\n- Specify if the optimization is specific to a dialect (e.g., PostgreSQL, MySQL).\n\nOutput Format:\n- Analysis of the original query.\n- Optimized SQL query block.\n- Indexing recommendations.\n- Explanation of performance gains.",
+    "category": "Development",
+    "subcategory": "SQL",
+    "difficulty": "Advanced",
+    "tags": [
+      "sql",
+      "database",
+      "performance"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Performance",
+      "Database"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-06",
+    "copyCount": 1760
+  },
+  {
+    "id": 7,
+    "title": "Generate API Documentation",
+    "slug": "generate-api-documentation",
+    "description": "Create clear docs for REST APIs.",
+    "content": "Act as a Technical Writer specializing in Developer Experience.\n\nContext:\nUse this to generate standard OpenAPI/Swagger documentation or markdown docs for a given [LANGUAGE] backend endpoint or [CODE] block.\n\nObjective:\nProduce comprehensive, accurate, and easy-to-read API documentation that developers can immediately use to integrate with the system.\n\nInstructions:\n1. Analyze the provided [CODE] or API description.\n2. Extract the endpoint URL, HTTP method, headers, path parameters, and query parameters.\n3. Identify the expected request body schema and successful response schema.\n4. Document potential error status codes and their payloads.\n5. Format the output professionally.\n\nConstraints:\n- Use standard REST terminology.\n- Do not invent parameters that are not present in the source.\n\nOutput Format:\n- Endpoint summary and URL.\n- Request parameters (Headers, Path, Query, Body).\n- Response formats (200 OK, 400 Bad Request, 500 Internal Server Error).\n- Example cURL request.",
+    "category": "Development",
+    "subcategory": "APIs",
+    "difficulty": "Intermediate",
+    "tags": [
+      "api",
+      "documentation",
+      "rest"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Documentation",
+      "Integration"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-07",
+    "copyCount": 1540
+  },
+  {
+    "id": 8,
+    "title": "Convert Code Between Languages",
+    "slug": "convert-code-between-languages",
+    "description": "Translate code from one language to another.",
+    "content": "Act as a Polyglot Software Engineer.\n\nContext:\nUse this when migrating a codebase, porting a library, or translating a specific [CODE] snippet from one language to [LANGUAGE].\n\nObjective:\nAccurately translate the provided source code into the target [LANGUAGE] while maintaining identical logic and adopting the idioms of the target language.\n\nInstructions:\n1. Analyze the original [CODE] to understand its logic, data structures, and algorithmic complexity.\n2. Translate the code into the target [LANGUAGE].\n3. Use native paradigms of the target language (e.g., list comprehensions in Python, streams in Java).\n4. Replace standard library functions with their exact equivalents.\n5. Note any discrepancies or unsupported features in the target language.\n\nConstraints:\n- Maintain the original algorithmic complexity.\n- Add comments explaining language-specific adaptations.\n\nOutput Format:\n- Translated [LANGUAGE] code block.\n- Brief explanation of idiomatic changes made.\n- Any warnings about edge cases.",
+    "category": "Development",
+    "subcategory": "JavaScript",
+    "difficulty": "Intermediate",
+    "tags": [
+      "translation",
+      "javascript",
+      "coding"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini",
+      "GitHub Copilot"
+    ],
+    "useCases": [
+      "Migration",
+      "Learning"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-08",
+    "copyCount": 1320
+  },
+  {
+    "id": 9,
+    "title": "Design Database Schema",
+    "slug": "design-database-schema",
+    "description": "Design a robust database architecture.",
+    "content": "Act as a Data Architect.\n\nContext:\nIdeal for the planning phase of a new application. Given a [TOPIC] or set of requirements, this prompt generates a normalized relational database schema.\n\nObjective:\nDesign a scalable and normalized database schema that accurately models the data for the specified [TOPIC].\n\nInstructions:\n1. Analyze the business requirements related to the [TOPIC].\n2. Identify core entities, attributes, and primary keys.\n3. Define the relationships between entities (1:1, 1:N, M:N) and foreign keys.\n4. Apply normalization rules (up to 3NF) to eliminate redundancy.\n5. Provide the schema definition in SQL DDL format.\n\nConstraints:\n- Use standard SQL syntax.\n- Include appropriate data types and constraints (NOT NULL, UNIQUE).\n- Do not over-engineer; stick to the provided requirements.\n\nOutput Format:\n- Entity-Relationship summary.\n- Complete SQL DDL script (CREATE TABLE statements).\n- Brief explanation of design decisions.",
+    "category": "Development",
+    "subcategory": "SQL",
+    "difficulty": "Advanced",
+    "tags": [
+      "sql",
+      "schema",
+      "architecture"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Architecture",
+      "Planning"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-09",
+    "copyCount": 1480
+  },
+  {
+    "id": 10,
+    "title": "Build REST API Endpoint",
+    "slug": "build-rest-api-endpoint",
+    "description": "Scaffold new REST API endpoints.",
+    "content": "Act as a Backend Developer specializing in REST architectures.\n\nContext:\nUse this to quickly scaffold a new API endpoint for a given [TOPIC] using [LANGUAGE] and a popular framework (like Express, FastAPI, or Spring Boot).\n\nObjective:\nWrite robust, secure, and well-structured code for a new REST API endpoint handling specific CRUD operations.\n\nInstructions:\n1. Determine the appropriate HTTP method and URL path for the [TOPIC].\n2. Write the controller/handler code in [LANGUAGE].\n3. Implement input validation for request payloads or query parameters.\n4. Scaffold the interaction with the database or service layer.\n5. Return the correct HTTP status codes and a standard JSON response format.\n\nConstraints:\n- Include error handling for common scenarios (e.g., 404 Not Found, 500 Internal Error).\n- Follow RESTful naming conventions.\n\nOutput Format:\n- Setup instructions (if necessary).\n- API Endpoint Code block.\n- Explanation of the validation and error handling logic.",
+    "category": "Development",
+    "subcategory": "APIs",
+    "difficulty": "Intermediate",
+    "tags": [
+      "api",
+      "rest",
+      "backend"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "GitHub Copilot"
+    ],
+    "useCases": [
+      "Backend",
+      "Scaffolding"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-10",
+    "copyCount": 1950
+  },
+  {
+    "id": 11,
+    "title": "Kubernetes Troubleshooting",
+    "slug": "kubernetes-troubleshooting",
+    "description": "Troubleshoot k8s cluster issues.",
+    "content": "Act as a Certified Kubernetes Administrator (CKA).\n\nContext:\nUse this prompt when a pod is crashing, pending, or experiencing network issues. Provide the error message or [CODE] output from kubectl.\n\nObjective:\nDiagnose the root cause of the Kubernetes issue and provide actionable commands to resolve it.\n\nInstructions:\n1. Analyze the provided kubectl error output or description.\n2. Identify potential causes (e.g., OOMKilled, ImagePullBackOff, CrashLoopBackOff).\n3. Outline the steps to isolate the issue using kubectl commands.\n4. Provide the solution or patch needed to fix the deployment/pod configuration.\n5. Suggest monitoring or resource limit adjustments to prevent recurrence.\n\nConstraints:\n- Assume a standard CNCF Kubernetes setup.\n- Do not suggest commands that delete resources without backup unless explicitly safe.\n\nOutput Format:\n- Diagnosis of the issue.\n- Troubleshooting steps (with exact kubectl commands).\n- Solution/Fix.\n- Prevention advice.",
+    "category": "DevOps & SRE",
+    "subcategory": "Kubernetes",
+    "difficulty": "Advanced",
+    "tags": [
+      "kubernetes",
+      "k8s",
+      "troubleshooting"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Incident Response",
+      "Debugging"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-11",
+    "copyCount": 2340
+  },
+  {
+    "id": 12,
+    "title": "Docker Troubleshooting",
+    "slug": "docker-troubleshooting",
+    "description": "Fix common Docker container issues.",
+    "content": "Act as a DevOps Engineer.\n\nContext:\nIdeal for fixing issues with Dockerfiles, networking, or container runtime errors. Provide the [CODE] or Docker logs for analysis.\n\nObjective:\nIdentify why a Docker container fails to build or run, and provide a corrected Dockerfile or run command.\n\nInstructions:\n1. Analyze the provided Dockerfile or error logs.\n2. Identify issues related to layering, permissions, missing dependencies, or port bindings.\n3. Suggest fixes for the specific error.\n4. Optimize the Dockerfile for smaller image size and better caching if applicable.\n5. Provide the corrected Dockerfile or docker run/compose command.\n\nConstraints:\n- Follow Docker best practices (e.g., non-root users, multi-stage builds).\n- Keep explanations clear and concise.\n\nOutput Format:\n- Root cause of the error.\n- Optimized/Corrected Dockerfile or Command.\n- Brief explanation of the improvements.",
+    "category": "DevOps & SRE",
+    "subcategory": "Docker",
+    "difficulty": "Intermediate",
+    "tags": [
+      "docker",
+      "containers",
+      "debug"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Debugging",
+      "Optimization"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-12",
+    "copyCount": 1980
+  },
+  {
+    "id": 13,
+    "title": "Incident Investigation",
+    "slug": "incident-investigation",
+    "description": "Investigate production incidents.",
+    "content": "Act as an Incident Commander in an SRE team.\n\nContext:\nUse this during an active production outage. Provide the symptoms, logs, or metrics related to the [TOPIC] to get a structured investigation plan.\n\nObjective:\nFormulate a rapid response plan to triage, mitigate, and resolve a production incident safely.\n\nInstructions:\n1. Assess the symptoms provided to determine the potential blast radius and severity.\n2. Generate a list of immediate investigative questions to ask the team.\n3. Provide a step-by-step mitigation plan focusing on restoring service quickly (e.g., rollbacks, scaling).\n4. Suggest specific logs or metrics to check to confirm the root cause.\n5. Keep the focus strictly on mitigation first, resolution second.\n\nConstraints:\n- Prioritize system stability and data integrity.\n- Avoid risky ad-hoc changes; prefer known safe states.\n\nOutput Format:\n- Severity Assessment.\n- Immediate Actions (Mitigation).\n- Investigative Steps.\n- Communication template for stakeholders.",
+    "category": "DevOps & SRE",
+    "subcategory": "Incident Management",
+    "difficulty": "Advanced",
+    "tags": [
+      "incident",
+      "production",
+      "sre"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Incident Response",
+      "On-Call"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-09-13",
+    "copyCount": 2780
+  },
+  {
+    "id": 14,
+    "title": "Root Cause Analysis",
+    "slug": "root-cause-analysis",
+    "description": "Perform RCA for major outages.",
+    "content": "Act as a Senior Site Reliability Engineer.\n\nContext:\nUse this after an incident is resolved to perform a thorough '5 Whys' or fishbone analysis on the [TOPIC].\n\nObjective:\nIdentify the fundamental systemic issue that led to the incident, preventing it from happening again.\n\nInstructions:\n1. Review the incident summary and timeline provided.\n2. Apply the '5 Whys' methodology to drill down into the technical and process failures.\n3. Identify contributing factors (human error, lack of automation, bad configuration).\n4. Propose actionable, long-term engineering solutions to eliminate the root cause.\n5. Ensure the tone is strictly blameless, focusing on systems, not individuals.\n\nConstraints:\n- Never blame a person; blame the system that allowed the error.\n- Recommendations must be concrete engineering tasks.\n\nOutput Format:\n- The '5 Whys' breakdown.\n- Identified Root Cause.\n- Action Items (Short-term and Long-term).",
+    "category": "DevOps & SRE",
+    "subcategory": "Incident Management",
+    "difficulty": "Advanced",
+    "tags": [
+      "rca",
+      "outage",
+      "sre"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Post-Incident",
+      "Process Improvement"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-14",
+    "copyCount": 2150
+  },
+  {
+    "id": 15,
+    "title": "SRE Postmortem",
+    "slug": "sre-postmortem",
+    "description": "Write blameless postmortems.",
+    "content": "Act as a Technical Writer for an SRE organization.\n\nContext:\nUse this to draft a formal, blameless postmortem document for stakeholders after a major [TOPIC] incident.\n\nObjective:\nCreate a clear, structured, and blameless postmortem report that outlines what happened, why, and how it will be prevented.\n\nInstructions:\n1. Take the provided rough notes, timeline, and root cause.\n2. Structure the information into a standard postmortem format.\n3. Write an executive summary suitable for non-technical stakeholders.\n4. Detail the impact on users and the business.\n5. Clearly list the timeline of events, root cause, and action items.\n\nConstraints:\n- Maintain a professional, objective, and blameless tone.\n- Ensure action items have clear owners (or placeholders) and timelines.\n\nOutput Format:\n- Executive Summary.\n- Impact Details.\n- Timeline.\n- Root Cause Analysis.\n- Action Items (Preventative measures).",
+    "category": "DevOps & SRE",
+    "subcategory": "Incident Management",
+    "difficulty": "Advanced",
+    "tags": [
+      "postmortem",
+      "sre",
+      "learning"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Documentation",
+      "Communication"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-15",
+    "copyCount": 1670
+  },
+  {
+    "id": 16,
+    "title": "Terraform Code Review",
+    "slug": "terraform-code-review",
+    "description": "Review IaC for best practices.",
+    "content": "Act as a Cloud Infrastructure Architect.\n\nContext:\nUse this to review Infrastructure as Code (IaC) written in Terraform. Paste the [CODE] to ensure it is secure, modular, and state-safe.\n\nObjective:\nIdentify bad practices, hardcoded values, and security risks in the Terraform configuration.\n\nInstructions:\n1. Analyze the provided Terraform [CODE].\n2. Check for hardcoded secrets or overly permissive IAM roles.\n3. Suggest modularization if the code is monolithic.\n4. Verify state management best practices (e.g., remote backends, locking).\n5. Provide a refactored version of the code implementing the suggestions.\n\nConstraints:\n- Focus on Terraform version >= 1.0 best practices.\n- Do not change the intended infrastructure topology.\n\nOutput Format:\n- Security and Best Practice feedback.\n- Suggested Refactored Code.\n- Explanation of changes.",
+    "category": "DevOps & SRE",
+    "subcategory": "Terraform",
+    "difficulty": "Intermediate",
+    "tags": [
+      "terraform",
+      "iac",
+      "review"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "GitHub Copilot"
+    ],
+    "useCases": [
+      "Code Review",
+      "Security"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-16",
+    "copyCount": 1540
+  },
+  {
+    "id": 17,
+    "title": "CI/CD Pipeline Review",
+    "slug": "cicd-pipeline-review",
+    "description": "Optimize build and deployment pipelines.",
+    "content": "Act as a DevSecOps Engineer.\n\nContext:\nUse this to review and optimize CI/CD pipeline configuration files (e.g., GitHub Actions, GitLab CI, Jenkinsfile) provided as [CODE].\n\nObjective:\nImprove pipeline speed, security, and reliability by identifying inefficiencies and suggesting caching or parallelization strategies.\n\nInstructions:\n1. Analyze the CI/CD [CODE] provided.\n2. Identify slow stages (e.g., redundant dependency downloads) and suggest caching mechanisms.\n3. Review security practices (e.g., secure secret injection, least privilege runners).\n4. Suggest splitting monolithic jobs into parallel matrix jobs if applicable.\n5. Provide the optimized pipeline configuration.\n\nConstraints:\n- Ensure the pipeline still achieves the original build/test/deploy goals.\n- Tailor advice to the specific CI/CD platform used in the code.\n\nOutput Format:\n- Pipeline Analysis (Speed, Security, Reliability).\n- Optimized Pipeline Code.\n- Summary of Improvements.",
+    "category": "DevOps & SRE",
+    "subcategory": "CI/CD",
+    "difficulty": "Intermediate",
+    "tags": [
+      "cicd",
+      "pipeline",
+      "devops"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Optimization",
+      "DevSecOps"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-17",
+    "copyCount": 1420
+  },
+  {
+    "id": 18,
+    "title": "Observability Strategy",
+    "slug": "observability-strategy",
+    "description": "Design monitoring and alerting.",
+    "content": "Act as an Observability Architect.\n\nContext:\nUse this when planning how to monitor a new microservice or architecture dealing with [TOPIC]. It helps define what metrics, logs, and traces are necessary.\n\nObjective:\nDesign a comprehensive observability strategy covering the Three Pillars (Metrics, Logs, Traces) for the specified system.\n\nInstructions:\n1. Analyze the system architecture or [TOPIC] provided.\n2. Define critical system metrics (e.g., RED method - Rate, Errors, Duration).\n3. Specify what logs should be structured and collected.\n4. Design a distributed tracing strategy highlighting critical spans.\n5. Suggest 3-5 critical alerts that indicate user-facing impact.\n\nConstraints:\n- Avoid alert fatigue by focusing only on actionable, high-signal alerts.\n- Recommend open standards (e.g., OpenTelemetry) where applicable.\n\nOutput Format:\n- Metrics Strategy (RED/USE).\n- Logging Strategy.\n- Tracing Implementation.\n- Key Alerts (Thresholds and Actions).",
+    "category": "DevOps & SRE",
+    "subcategory": "Observability",
+    "difficulty": "Advanced",
+    "tags": [
+      "monitoring",
+      "observability",
+      "metrics"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Architecture",
+      "Monitoring"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-18",
+    "copyCount": 1350
+  },
+  {
+    "id": 19,
+    "title": "SLO Design",
+    "slug": "slo-design",
+    "description": "Define Service Level Objectives.",
+    "content": "Act as a Site Reliability Engineering Manager.\n\nContext:\nUse this to define Service Level Indicators (SLIs) and Service Level Objectives (SLOs) for a product or service related to [TOPIC].\n\nObjective:\nCreate realistic, user-centric SLOs that balance reliability with feature velocity.\n\nInstructions:\n1. Identify the critical user journeys (CUJs) for the [TOPIC] service.\n2. Define clear SLIs (e.g., successful HTTP requests, latency under X ms) for each CUJ.\n3. Propose target SLO percentages based on industry standards (e.g., 99.9%).\n4. Calculate the resulting Error Budget per month/quarter.\n5. Suggest policies for what happens when the error budget is exhausted.\n\nConstraints:\n- SLIs must be measurable from the user's perspective.\n- Keep the number of SLOs small and manageable (3-5 max).\n\nOutput Format:\n- Critical User Journeys.\n- Defined SLIs and Measurement Methods.\n- Target SLOs and Error Budgets.\n- Error Budget Policy.",
+    "category": "DevOps & SRE",
+    "subcategory": "Reliability",
+    "difficulty": "Advanced",
+    "tags": [
+      "slo",
+      "sla",
+      "reliability"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Planning",
+      "Reliability"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-19",
+    "copyCount": 1280
+  },
+  {
+    "id": 20,
+    "title": "Production Readiness Review",
+    "slug": "production-readiness-review",
+    "description": "Evaluate services before launch.",
+    "content": "Act as an SRE Reviewer.\n\nContext:\nUse this to generate a Production Readiness Review (PRR) checklist for a new service handling [TOPIC]. Ensures all operational requirements are met before go-live.\n\nObjective:\nEvaluate the service against best practices for scalability, security, observability, and operability.\n\nInstructions:\n1. Based on the [TOPIC], generate a targeted PRR checklist.\n2. Include questions on Architecture, Dependencies, and Scalability.\n3. Include questions on Observability (Logs, Metrics, Alerts).\n4. Include questions on Incident Response (Runbooks, On-call).\n5. Include questions on Security and Compliance.\n\nConstraints:\n- The checklist must be actionable and specific, requiring clear 'Yes/No' or detailed answers.\n- Tailor the depth based on the criticality of the [TOPIC].\n\nOutput Format:\n- Architecture & Capacity Checklist.\n- Observability Checklist.\n- Operational Readiness Checklist.\n- Security Checklist.",
+    "category": "DevOps & SRE",
+    "subcategory": "Reliability",
+    "difficulty": "Advanced",
+    "tags": [
+      "prr",
+      "production",
+      "launch"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Launch",
+      "Audit"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-20",
+    "copyCount": 1890
+  },
+  {
+    "id": 21,
+    "title": "Resume Improvement",
+    "slug": "resume-improvement",
+    "description": "Enhance your resume for ATS.",
+    "content": "Act as an Expert Technical Recruiter.\n\nContext:\nUse this to optimize a resume for an applicant applying for a [ROLE] in the [INDUSTRY] industry. Provide the current resume content as input.\n\nObjective:\nRewrite and structure the resume bullet points to highlight impact, use action verbs, and ensure ATS (Applicant Tracking System) compatibility.\n\nInstructions:\n1. Review the provided resume content.\n2. Rewrite bullet points using the XYZ formula: 'Accomplished [X] as measured by [Y], by doing [Z]'.\n3. Ensure relevant keywords for [ROLE] are naturally integrated.\n4. Suggest formatting improvements or sections to add/remove.\n5. Highlight any gaps or weak points that need more context from the user.\n\nConstraints:\n- Do not invent experience or metrics; use placeholders if metrics are missing.\n- Keep the tone professional and confident.\n\nOutput Format:\n- Overall critique.\n- Rewritten Experience Section (bullet points).\n- Recommended Skills/Keywords to add.",
+    "category": "Career",
+    "subcategory": "Resume",
+    "difficulty": "Beginner",
+    "tags": [
+      "resume",
+      "ats",
+      "career"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Job Search",
+      "Personal Branding"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-09-20",
+    "copyCount": 4120
+  },
+  {
+    "id": 22,
+    "title": "Job Description Analysis",
+    "slug": "job-description-analysis",
+    "description": "Extract key requirements from job postings.",
+    "content": "Act as a Career Coach.\n\nContext:\nUse this when preparing to apply or interview for a specific job. Provide the full job description text.\n\nObjective:\nAnalyze the job description to extract the most critical skills, identify the company's core pain points, and suggest how a candidate can position themselves.\n\nInstructions:\n1. Read the provided job description carefully.\n2. Extract the top 5 'must-have' hard skills and top 3 soft skills.\n3. Infer what the underlying challenge or goal is for this role (why are they hiring?).\n4. Suggest 3 specific resume bullet points or interview stories the candidate should prepare to address these needs.\n5. Identify any red flags or ambiguous requirements in the posting.\n\nConstraints:\n- Be concise and analytical.\n- Focus on what the employer actually values, cutting through corporate jargon.\n\nOutput Format:\n- Key Skills Needed.\n- The Employer's Core Problem.\n- Recommended Candidate Positioning.\n- Potential Red Flags.",
+    "category": "Career",
+    "subcategory": "Job Search",
+    "difficulty": "Intermediate",
+    "tags": [
+      "job-search",
+      "analysis",
+      "career"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Job Search",
+      "Interview Prep"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-21",
+    "copyCount": 2890
+  },
+  {
+    "id": 23,
+    "title": "Interview Preparation",
+    "slug": "interview-preparation",
+    "description": "Prepare for behavioral interviews.",
+    "content": "Act as an Executive Interview Coach.\n\nContext:\nUse this to prepare for a behavioral interview for a [ROLE] position at [COMPANY].\n\nObjective:\nGenerate highly likely behavioral interview questions and provide frameworks for answering them effectively.\n\nInstructions:\n1. Based on the [ROLE] and [COMPANY] culture (if known), generate 5 challenging behavioral questions.\n2. For each question, explain what the interviewer is actually trying to uncover.\n3. Provide a structural guide for the answer using the STAR method (Situation, Task, Action, Result).\n4. Give an example of a strong, impactful response.\n5. Suggest questions the candidate should ask the interviewer at the end.\n\nConstraints:\n- Questions should not be generic; tailor them to the seniority of the role.\n- Emphasize the 'Result' part of the STAR method.\n\nOutput Format:\n- 5 Tailored Behavioral Questions (with intent and STAR breakdown).\n- 3 Strategic Questions for the Candidate to Ask.",
+    "category": "Career",
+    "subcategory": "Interview",
+    "difficulty": "Intermediate",
+    "tags": [
+      "interview",
+      "prep",
+      "career"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Interview Prep",
+      "Coaching"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-09-22",
+    "copyCount": 3560
+  },
+  {
+    "id": 24,
+    "title": "Mock Technical Interview",
+    "slug": "mock-technical-interview",
+    "description": "Practice coding interview questions.",
+    "content": "Act as a Senior Hiring Manager conducting a technical screen.\n\nContext:\nUse this to simulate a live coding or system design interview for a [ROLE] focusing on [TOPIC].\n\nObjective:\nConduct a realistic, interactive mock interview to test the candidate's technical knowledge and problem-solving skills.\n\nInstructions:\n1. Start by giving the user a specific, medium-to-hard difficulty technical problem related to [TOPIC].\n2. Wait for the user to respond with their approach or code.\n3. Do NOT provide the full solution immediately. Instead, critique their approach, point out edge cases, or ask follow-up questions about time/space complexity.\n4. If the user gets stuck, provide a small hint.\n5. Conclude with a detailed evaluation of their performance once they solve it.\n\nConstraints:\n- This must be an interactive prompt. End your initial response by waiting for the user's input.\n- Be rigorous but encouraging.\n\nOutput Format:\n- Problem Statement.\n- Constraints/Edge Cases to consider.\n- (Wait for user input).",
+    "category": "Career",
+    "subcategory": "Interview",
+    "difficulty": "Advanced",
+    "tags": [
+      "interview",
+      "technical",
+      "coding"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Interview Prep",
+      "Learning"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-23",
+    "copyCount": 2340
+  },
+  {
+    "id": 25,
+    "title": "LinkedIn Profile Optimization",
+    "slug": "linkedin-profile-optimization",
+    "description": "Make your LinkedIn profile stand out.",
+    "content": "Act as a Personal Branding Expert.\n\nContext:\nUse this to revamp a LinkedIn profile for someone targeting a [ROLE] in the [INDUSTRY]. Provide current profile text if available.\n\nObjective:\nCreate compelling, SEO-optimized LinkedIn sections (Headline, About, Experience) that attract recruiters and establish authority.\n\nInstructions:\n1. Create 3 options for an impactful, keyword-rich Headline that goes beyond just a job title.\n2. Write a highly engaging 'About' section written in the first person that tells a story, highlights key achievements, and ends with a call to action.\n3. Provide tips on how to format the 'Experience' section to maximize visibility in LinkedIn searches.\n4. Suggest 3 types of content the person should post to build their network.\n\nConstraints:\n- Keep the tone professional but approachable and authentic.\n- Avoid cliché buzzwords like 'synergy' or 'go-getter'.\n\nOutput Format:\n- 3 Headline Options.\n- Drafted 'About' Section.\n- Experience Section Tips.\n- Content Strategy Advice.",
+    "category": "Career",
+    "subcategory": "LinkedIn",
+    "difficulty": "Beginner",
+    "tags": [
+      "linkedin",
+      "profile",
+      "networking"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Personal Branding",
+      "Networking"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-09-24",
+    "copyCount": 3780
+  },
+  {
+    "id": 26,
+    "title": "Recruiter Outreach Message",
+    "slug": "recruiter-outreach-message",
+    "description": "Write compelling messages to recruiters.",
+    "content": "Act as a Career Communication Specialist.\n\nContext:\nUse this to draft a cold outreach message on LinkedIn or via email to a recruiter hiring for a [ROLE] at [COMPANY].\n\nObjective:\nWrite a concise, highly personalized message that grabs the recruiter's attention and secures an initial screening call.\n\nInstructions:\n1. Draft a short message (under 100 words) tailored to a specific [ROLE].\n2. Hook the reader immediately by mentioning [COMPANY] and the specific open position.\n3. Include one powerful sentence highlighting a highly relevant achievement or metric.\n4. End with a low-friction call to action (e.g., asking for a brief chat, not immediately asking for a job).\n5. Provide two variants: one for LinkedIn InMail (shorter) and one for Email.\n\nConstraints:\n- Must be highly respectful of the recruiter's time.\n- Do not sound desperate; convey professional confidence.\n\nOutput Format:\n- LinkedIn InMail Variant.\n- Email Variant (with Subject Line).",
+    "category": "Career",
+    "subcategory": "Job Search",
+    "difficulty": "Beginner",
+    "tags": [
+      "outreach",
+      "recruiter",
+      "job-search"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Networking",
+      "Job Search"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-25",
+    "copyCount": 2150
+  },
+  {
+    "id": 27,
+    "title": "Business Idea Validation",
+    "slug": "business-idea-validation",
+    "description": "Validate new business concepts.",
+    "content": "Act as a Startup Mentor and Venture Capitalist.\n\nContext:\nUse this to evaluate the viability of a new business idea related to [TOPIC] targeting [AUDIENCE].\n\nObjective:\nCritically analyze the business concept, identifying strengths, weaknesses, and key assumptions that must be tested.\n\nInstructions:\n1. Analyze the core value proposition of the [TOPIC] for the [AUDIENCE].\n2. Identify the top 3 critical assumptions the founder is making (e.g., market size, willingness to pay).\n3. Outline a low-cost, fast method to validate these assumptions (e.g., a landing page test, customer interviews).\n4. Assess potential competitive threats in the current market.\n5. Provide a brutal, honest 'Go/No-Go' recommendation based on standard startup failure modes.\n\nConstraints:\n- Do not just praise the idea; provide rigorous, skeptical analysis.\n- Ensure validation methods are practical for early-stage bootstrapping.\n\nOutput Format:\n- Value Proposition Breakdown.\n- Critical Assumptions to Test.\n- Validation Experiment Design.\n- Competitive Risks.\n- Mentor's Verdict.",
+    "category": "Business",
+    "subcategory": "Startup",
+    "difficulty": "Intermediate",
+    "tags": [
+      "startup",
+      "validation",
+      "ideas"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Strategy",
+      "Entrepreneurship"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-26",
+    "copyCount": 2670
+  },
+  {
+    "id": 28,
+    "title": "Competitor Analysis",
+    "slug": "competitor-analysis",
+    "description": "Analyze competitor strengths and weaknesses.",
+    "content": "Act as a Market Strategy Analyst.\n\nContext:\nUse this to generate a comprehensive analysis of competitors in the [INDUSTRY] for a company building a product in [TOPIC].\n\nObjective:\nIdentify key market players, deconstruct their strategies, and uncover gaps your product can exploit.\n\nInstructions:\n1. Identify 3-4 major competitors in the [INDUSTRY] relevant to [TOPIC].\n2. For each competitor, analyze their core value proposition, pricing model, and target audience.\n3. Identify their major strengths (moats) and critical weaknesses (complaints, missing features).\n4. Outline a 'White Space' analysis detailing underserved customer needs or market gaps.\n5. Propose 3 strategic differentiation tactics for your product.\n\nConstraints:\n- Base the analysis on known market data and standard business models.\n- Be highly objective and structured.\n\nOutput Format:\n- Competitor Profiles (Strengths/Weaknesses).\n- Market Gaps / White Space.\n- Recommended Differentiation Strategy.",
+    "category": "Business",
+    "subcategory": "Strategy",
+    "difficulty": "Intermediate",
+    "tags": [
+      "competitor",
+      "analysis",
+      "strategy"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Marketing",
+      "Strategy"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-27",
+    "copyCount": 2340
+  },
+  {
+    "id": 29,
+    "title": "Business Plan Draft",
+    "slug": "business-plan-draft",
+    "description": "Draft a comprehensive business plan.",
+    "content": "Act as a Strategic Business Consultant.\n\nContext:\nUse this to draft a professional executive summary and business plan structure for a new venture focusing on [TOPIC] in the [INDUSTRY].\n\nObjective:\nCreate a clear, investor-ready business plan outline and executive summary that captures the vision, market, and financial strategy.\n\nInstructions:\n1. Write a compelling, 1-page Executive Summary for the venture.\n2. Outline the Market Opportunity and Target Audience.\n3. Define the Revenue Model and Go-to-Market Strategy.\n4. Identify key operational milestones for the first 12 months.\n5. Provide a structure for the Financial Projections section.\n\nConstraints:\n- Keep the tone professional, persuasive, and grounded in reality.\n- Use standard business planning frameworks (like Lean Canvas elements).\n\nOutput Format:\n- Executive Summary.\n- Market Analysis Overview.\n- Revenue & Go-to-Market Model.\n- 12-Month Roadmap.",
+    "category": "Business",
+    "subcategory": "Business Planning",
+    "difficulty": "Advanced",
+    "tags": [
+      "business-plan",
+      "startup",
+      "planning"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Planning",
+      "Fundraising"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-28",
+    "copyCount": 1980
+  },
+  {
+    "id": 30,
+    "title": "Customer Persona Creation",
+    "slug": "customer-persona-creation",
+    "description": "Develop detailed customer personas.",
+    "content": "Act as a Senior Product Marketing Manager.\n\nContext:\nUse this to define the ideal buyer persona for a product addressing [TOPIC] aimed at [AUDIENCE].\n\nObjective:\nCreate a highly detailed, empathetic, and actionable customer persona that guides product development and marketing.\n\nInstructions:\n1. Give the persona a descriptive name and basic demographic profile.\n2. Detail their professional role, goals, and daily responsibilities.\n3. Deep dive into their critical pain points, frustrations, and challenges related to [TOPIC].\n4. Identify their preferred information sources (where do they hang out online?).\n5. Write the 'Elevator Pitch' tailored exactly to how this persona wants to be sold to.\n\nConstraints:\n- Avoid generic demographics; focus heavily on psychographics and behavior.\n- Ensure the pain points map directly to realistic problems.\n\nOutput Format:\n- Persona Profile (Name, Demographics).\n- Goals & Pain Points.\n- Information Diet.\n- Tailored Value Proposition.",
+    "category": "Business",
+    "subcategory": "Marketing",
+    "difficulty": "Intermediate",
+    "tags": [
+      "marketing",
+      "persona",
+      "customers"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Marketing",
+      "Product Management"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-09-29",
+    "copyCount": 2120
+  },
+  {
+    "id": 31,
+    "title": "Pricing Strategy",
+    "slug": "pricing-strategy",
+    "description": "Determine optimal product pricing.",
+    "content": "Act as a Pricing Strategy Expert.\n\nContext:\nUse this to formulate a pricing model for a new SaaS or product in the [INDUSTRY] focusing on [TOPIC].\n\nObjective:\nDesign a multi-tiered pricing strategy that maximizes revenue while minimizing friction for new user adoption.\n\nInstructions:\n1. Analyze standard pricing models for [TOPIC] (e.g., Freemium, Usage-based, Flat-rate).\n2. Propose a 3-tier pricing structure (e.g., Starter, Pro, Enterprise).\n3. Clearly define the 'value metric' that separates the tiers (what feature or limit drives upgrades?).\n4. Discuss the psychological pricing tactics applied.\n5. Highlight potential risks (e.g., cannibalization) and how to mitigate them.\n\nConstraints:\n- Ensure the pricing scales with the value delivered to the user.\n- Provide specific, realistic price points as examples.\n\nOutput Format:\n- Recommended Pricing Model.\n- 3-Tier Structure Breakdown.\n- Value Metric Definition.\n- Strategic Justification.",
+    "category": "Business",
+    "subcategory": "Strategy",
+    "difficulty": "Advanced",
+    "tags": [
+      "pricing",
+      "strategy",
+      "business"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Strategy",
+      "Monetization"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-09-30",
+    "copyCount": 1560
+  },
+  {
+    "id": 32,
+    "title": "Marketing Strategy",
+    "slug": "marketing-strategy",
+    "description": "Create a go-to-market strategy.",
+    "content": "Act as a Chief Marketing Officer.\n\nContext:\nUse this to develop a Go-To-Market (GTM) strategy for launching a new product in the [INDUSTRY] addressing [TOPIC] with a budget of [BUDGET].\n\nObjective:\nProvide a comprehensive, actionable launch plan across multiple channels to acquire the first 1,000 customers.\n\nInstructions:\n1. Define the core messaging and unique value proposition.\n2. Select the top 3 marketing channels with the highest ROI potential for this specific [INDUSTRY] and [BUDGET].\n3. Outline a timeline for pre-launch, launch day, and post-launch activities.\n4. Suggest a low-cost growth hack or viral loop mechanism.\n5. Define the Key Performance Indicators (KPIs) to measure success.\n\nConstraints:\n- Be realistic about what can be achieved with the specified [BUDGET].\n- Focus on acquisition and activation metrics.\n\nOutput Format:\n- Core Messaging.\n- Top 3 Channels & Tactics.\n- Launch Timeline.\n- Growth Hack Concept.\n- Success Metrics (KPIs).",
+    "category": "Business",
+    "subcategory": "Marketing",
+    "difficulty": "Intermediate",
+    "tags": [
+      "marketing",
+      "strategy",
+      "gtm"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Marketing",
+      "Launch"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-10-01",
+    "copyCount": 2450
+  },
+  {
+    "id": 33,
+    "title": "Professional Email Writer",
+    "slug": "professional-email-writer",
+    "description": "Draft professional and effective emails.",
+    "content": "Act as an Executive Communication Coach.\n\nContext:\nUse this to draft an email regarding [TOPIC] directed to a [AUDIENCE]. The desired tone is professional, clear, and action-oriented.\n\nObjective:\nWrite an effective email that clearly communicates the message, minimizes back-and-forth, and achieves the desired outcome.\n\nInstructions:\n1. Draft a concise, highly specific subject line.\n2. Open with a polite but direct statement of purpose.\n3. Provide the necessary context or details using bullet points for readability.\n4. Clearly state the 'Ask' or Call to Action (what do you need the recipient to do?).\n5. Provide two variations: one formal and one slightly more conversational.\n\nConstraints:\n- Keep the email under 150 words.\n- Avoid passive-aggressive corporate speak; be direct and polite.\n\nOutput Format:\n- Subject Line Options.\n- Formal Email Draft.\n- Conversational Email Draft.",
+    "category": "Writing",
+    "subcategory": "Emails",
+    "difficulty": "Beginner",
+    "tags": [
+      "email",
+      "communication",
+      "writing"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Communication",
+      "Productivity"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-10-02",
+    "copyCount": 3890
+  },
+  {
+    "id": 34,
+    "title": "Report Summarizer",
+    "slug": "report-summarizer",
+    "description": "Summarize long reports and documents.",
+    "content": "Act as an Intelligence Analyst.\n\nContext:\nUse this to distill a long, dense document or report about [TOPIC] into a quick, readable format for busy executives.\n\nObjective:\nExtract the most critical findings, data points, and action items from the provided text.\n\nInstructions:\n1. Read and analyze the provided text.\n2. Write a 2-3 sentence executive summary capturing the main thesis.\n3. Extract the 5 most important facts or data points as bullet points.\n4. Identify any strategic recommendations or required actions mentioned in the text.\n5. Highlight any risks or negative indicators explicitly stated.\n\nConstraints:\n- Do not add outside information; summarize only what is provided.\n- Maintain an objective, neutral tone.\n\nOutput Format:\n- Executive Summary.\n- Top 5 Key Findings.\n- Action Items.\n- Noted Risks.",
+    "category": "Writing",
+    "subcategory": "Reports",
+    "difficulty": "Beginner",
+    "tags": [
+      "summary",
+      "report",
+      "writing"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Research",
+      "Productivity"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-10-02",
+    "copyCount": 2670
+  },
+  {
+    "id": 35,
+    "title": "Technical Documentation",
+    "slug": "technical-documentation",
+    "description": "Write clear technical docs.",
+    "content": "Act as a Senior Technical Writer.\n\nContext:\nUse this to write user-facing documentation or a README file for a system or tool related to [TOPIC].\n\nObjective:\nCreate clear, structured, and easy-to-follow documentation that allows a new user to understand and implement the tool quickly.\n\nInstructions:\n1. Start with a high-level overview explaining what the tool is and why it's useful.\n2. Provide a 'Prerequisites' section.\n3. Write a step-by-step 'Quick Start' or 'Installation' guide.\n4. Document the primary configuration options or usage examples.\n5. Include a 'Troubleshooting' section for common errors.\n\nConstraints:\n- Use Markdown formatting with code blocks where appropriate.\n- Keep instructions linear and unambiguous.\n\nOutput Format:\n- Overview & Features.\n- Prerequisites.\n- Quick Start Guide.\n- Usage Examples.\n- Troubleshooting.",
+    "category": "Writing",
+    "subcategory": "Documentation",
+    "difficulty": "Intermediate",
+    "tags": [
+      "documentation",
+      "technical",
+      "writing"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Documentation",
+      "Engineering"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-10-03",
+    "copyCount": 1780
+  },
+  {
+    "id": 36,
+    "title": "Proposal Writer",
+    "slug": "proposal-writer",
+    "description": "Draft persuasive project proposals.",
+    "content": "Act as a B2B Sales Consultant.\n\nContext:\nUse this to draft a persuasive business or project proposal for a client needing a solution for [TOPIC] within a [TIMEFRAME].\n\nObjective:\nCreate a structured, compelling proposal that clearly demonstrates understanding of the client's problem and presents a winning solution.\n\nInstructions:\n1. Begin with an 'Executive Summary' restating the client's core problem.\n2. Outline the 'Proposed Solution', detailing the methodology and deliverables.\n3. Provide a clear project timeline broken down into phases based on the [TIMEFRAME].\n4. Include a section for Investment/Pricing structure.\n5. Conclude with the expected ROI and next steps.\n\nConstraints:\n- Focus heavily on the benefits to the client, not just the features of the service.\n- Maintain a highly professional and persuasive tone.\n\nOutput Format:\n- Executive Summary.\n- Proposed Solution & Deliverables.\n- Project Timeline.\n- Investment & ROI.\n- Next Steps.",
+    "category": "Writing",
+    "subcategory": "Proposals",
+    "difficulty": "Advanced",
+    "tags": [
+      "proposal",
+      "business",
+      "writing"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Sales",
+      "Freelancing"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-10-03",
+    "copyCount": 1450
+  },
+  {
+    "id": 37,
+    "title": "Copywriting Framework",
+    "slug": "copywriting-framework",
+    "description": "Use proven frameworks for copywriting.",
+    "content": "Act as a Direct Response Copywriter.\n\nContext:\nUse this to generate sales copy for [TOPIC] aimed at [AUDIENCE] using established psychological frameworks like AIDA or PAS.\n\nObjective:\nWrite high-converting copy that captures attention, builds desire, and drives the reader to take immediate action.\n\nInstructions:\n1. Analyze the [TOPIC] and the core desires/fears of the [AUDIENCE].\n2. Write one variant using the AIDA framework (Attention, Interest, Desire, Action).\n3. Write a second variant using the PAS framework (Problem, Agitation, Solution).\n4. Ensure strong, punchy headlines for both variants.\n5. Include a clear, singular Call to Action (CTA).\n\nConstraints:\n- Avoid clunky sentences; copy must flow naturally and energetically.\n- Do not use passive voice.\n\nOutput Format:\n- AIDA Variant (Headline, Body, CTA).\n- PAS Variant (Headline, Body, CTA).",
+    "category": "Writing",
+    "subcategory": "Copywriting",
+    "difficulty": "Intermediate",
+    "tags": [
+      "copywriting",
+      "marketing",
+      "framework"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Marketing",
+      "Sales"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 2340
+  },
+  {
+    "id": 38,
+    "title": "LinkedIn Post Creator",
+    "slug": "linkedin-post-creator",
+    "description": "Create engaging LinkedIn posts.",
+    "content": "Act as a LinkedIn Ghostwriter.\n\nContext:\nUse this to turn a thought, article, or [TOPIC] into an engaging, high-performing LinkedIn post designed to spark discussion.\n\nObjective:\nDraft a LinkedIn post with a strong hook, readable formatting, and a clear call for engagement in the comments.\n\nInstructions:\n1. Create a 1-2 line strong 'Hook' that challenges a common belief or shares a surprising fact about [TOPIC].\n2. Write the body using short sentences, plenty of white space, and a conversational tone.\n3. Share a specific, relatable story or example.\n4. End with a thought-provoking question to drive comments.\n5. Include 3-5 highly relevant hashtags.\n\nConstraints:\n- Avoid the 'broetry' style (single sentence lines forever); mix sentence lengths.\n- No corporate jargon; sound like a real human.\n\nOutput Format:\n- The Post Draft.\n- Recommended Hashtags.",
+    "category": "Social Media",
+    "subcategory": "LinkedIn",
+    "difficulty": "Beginner",
+    "tags": [
+      "linkedin",
+      "social-media",
+      "post"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Social Media",
+      "Personal Branding"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 4560
+  },
+  {
+    "id": 39,
+    "title": "Instagram Caption Writer",
+    "slug": "instagram-caption-writer",
+    "description": "Write catchy Instagram captions.",
+    "content": "Act as a Social Media Manager.\n\nContext:\nUse this to generate an engaging Instagram caption for an image/video related to [TOPIC] targeting [AUDIENCE].\n\nObjective:\nWrite a caption that captures the vibe, provides value or entertainment, and encourages saves/shares.\n\nInstructions:\n1. Draft a punchy first sentence that ensures users tap 'read more'.\n2. Write the main body matching the tone suitable for [AUDIENCE] (e.g., inspirational, humorous, educational).\n3. Include a clear Call to Action (e.g., 'Save this for later', 'Link in bio').\n4. Generate a mix of 10-15 relevant, mix-density hashtags.\n5. Provide 3 different stylistic variations (Short, Story-driven, Educational).\n\nConstraints:\n- Use emojis tastefully, do not overdo it.\n- Ensure the tone matches standard Instagram aesthetics.\n\nOutput Format:\n- Variation 1 (Short & Punchy).\n- Variation 2 (Story/Vibe).\n- Variation 3 (Value/Educational).\n- Hashtag Bank.",
+    "category": "Social Media",
+    "subcategory": "Instagram",
+    "difficulty": "Beginner",
+    "tags": [
+      "instagram",
+      "caption",
+      "social"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Social Media",
+      "Marketing"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 3120
+  },
+  {
+    "id": 40,
+    "title": "YouTube Script Outline",
+    "slug": "youtube-script-outline",
+    "description": "Outline scripts for YouTube videos.",
+    "content": "Act as a YouTube Content Strategist.\n\nContext:\nUse this to outline a highly engaging YouTube video about [TOPIC] optimized for audience retention.\n\nObjective:\nProvide a structured video outline that hooks the viewer early, delivers value systematically, and drives end-screen clicks.\n\nInstructions:\n1. Write a 15-second 'Hook' script that immediately addresses the viewer's intent without a long intro.\n2. Outline the main body into 3-5 distinct 'Chapters' or 'Acts'.\n3. For each chapter, specify the key talking point and a suggested B-roll/visual idea.\n4. Draft a conclusion that includes a Call to Action (subscribe/like) and a tease for the next video (end-screen).\n5. Suggest 3 potential high-CTR Titles and a Thumbnail concept.\n\nConstraints:\n- Focus on pacing and retention; avoid slow segments.\n- Keep it structured and easy for the creator to read from.\n\nOutput Format:\n- Title & Thumbnail Ideas.\n- The Hook (0:00 - 0:30).\n- Body Chapters (with visual cues).\n- Conclusion & CTA.",
+    "category": "Social Media",
+    "subcategory": "YouTube",
+    "difficulty": "Intermediate",
+    "tags": [
+      "youtube",
+      "script",
+      "video"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Content Creation",
+      "Video"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 2340
+  },
+  {
+    "id": 41,
+    "title": "X/Twitter Thread Writer",
+    "slug": "x-twitter-thread-writer",
+    "description": "Draft engaging Twitter threads.",
+    "content": "Act as an Expert Twitter/X Ghostwriter.\n\nContext:\nUse this to break down a complex idea or article about [TOPIC] into an engaging, viral-style Twitter thread.\n\nObjective:\nWrite a cohesive, fast-paced thread (5-8 tweets) that maximizes retweets, bookmarks, and followers.\n\nInstructions:\n1. Tweet 1 (The Hook): Make a bold claim, share a shocking statistic, or promise immense value regarding [TOPIC].\n2. Tweets 2-6 (The Body): Break down the concept logically. One main idea per tweet. Use bullet points or numbers for readability.\n3. Tweet 7 (The Summary): Summarize the main takeaway in one powerful sentence.\n4. Tweet 8 (The CTA): Ask the user to follow, retweet the first tweet, or click a link.\n\nConstraints:\n- Strictly adhere to the 280-character limit per tweet.\n- Avoid complex words; optimize for skimming.\n\nOutput Format:\n- Numbered list of Tweets [1/X], [2/X], etc.",
+    "category": "Social Media",
+    "subcategory": "X",
+    "difficulty": "Intermediate",
+    "tags": [
+      "twitter",
+      "thread",
+      "social"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Social Media",
+      "Content Strategy"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 2780
+  },
+  {
+    "id": 42,
+    "title": "AI Image Prompt Generator",
+    "slug": "ai-image-prompt-generator",
+    "description": "Generate prompts for Midjourney/DALL-E.",
+    "content": "Act as an AI Prompt Engineering Expert for Image Generation.\n\nContext:\nUse this to translate a basic idea about [TOPIC] into a highly detailed, stylized prompt optimized for tools like Midjourney or DALL-E 3.\n\nObjective:\nGenerate descriptive image prompts that yield high-quality, specific, and aesthetically pleasing results.\n\nInstructions:\n1. Expand the [TOPIC] into a vivid scene description.\n2. Specify the medium (e.g., digital art, 35mm photography, oil painting).\n3. Detail the lighting (e.g., cinematic, golden hour, volumetric).\n4. Specify camera angles or composition rules (e.g., wide angle, rule of thirds, macro).\n5. Add stylistic keywords or artist references if applicable.\n6. Generate 3 different variations of the prompt (e.g., Photorealistic, Artistic, Cinematic).\n\nConstraints:\n- Format the prompts as comma-separated keyword strings for Midjourney compatibility.\n- Avoid contradictory terms.\n\nOutput Format:\n- Variation 1 (Photorealistic).\n- Variation 2 (Stylized/Artistic).\n- Variation 3 (Cinematic).",
+    "category": "Creative",
+    "subcategory": "Image Generation",
+    "difficulty": "Intermediate",
+    "tags": [
+      "ai-art",
+      "midjourney",
+      "dalle"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Design",
+      "Creative"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 3450
+  },
+  {
+    "id": 43,
+    "title": "Photography Shot Planner",
+    "slug": "photography-shot-planner",
+    "description": "Plan a photography shoot.",
+    "content": "Act as a Professional Art Director.\n\nContext:\nUse this to plan a photography shoot for [TOPIC]. It helps organize the creative vision, required gear, and specific shot list.\n\nObjective:\nCreate a comprehensive shoot brief that ensures all necessary images are captured efficiently.\n\nInstructions:\n1. Define the overall mood and aesthetic of the shoot (e.g., moody, bright and airy, high contrast).\n2. Suggest the optimal location, time of day, and lighting setup.\n3. Recommend necessary gear (lens focal lengths, lighting modifiers).\n4. Provide a detailed 5-shot list describing exactly what is in the frame and the pose/action.\n\nConstraints:\n- Ensure recommendations are physically possible.\n- Keep descriptions visual and precise.\n\nOutput Format:\n- Creative Direction (Mood, Lighting).\n- Gear Recommendations.\n- The Shot List (Detailed breakdown of 5 essential shots).",
+    "category": "Creative",
+    "subcategory": "Photography",
+    "difficulty": "Intermediate",
+    "tags": [
+      "photography",
+      "planning",
+      "creative"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Creative",
+      "Planning"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-10-04",
+    "copyCount": 1230
+  },
+  {
+    "id": 44,
+    "title": "Video Script Writer",
+    "slug": "video-script-writer",
+    "description": "Write full video scripts.",
+    "content": "Act as a Commercial Scriptwriter.\n\nContext:\nUse this to write a full audio/visual script for a short video (under 2 minutes) about [TOPIC] aimed at [AUDIENCE].\n\nObjective:\nProduce a standard 2-column A/V script format that a production team can immediately use to shoot and edit.\n\nInstructions:\n1. Format the output in a 2-column layout (Visuals on the left, Audio/Dialogue on the right).\n2. Write a strong hook for the first 5 seconds.\n3. Describe the b-roll, text overlays, and camera movements in the Visuals column.\n4. Write natural, persuasive dialogue or voiceover in the Audio column.\n5. Keep the pacing tight and appropriate for modern short-form or commercial video.\n\nConstraints:\n- Ensure the audio can actually be read within the desired timeframe (approx 130 words per minute).\n- Keep visual directions realistic.\n\nOutput Format:\n- Target Duration & Aspect Ratio.\n- 2-Column Script (Visuals | Audio).",
+    "category": "Creative",
+    "subcategory": "Video",
+    "difficulty": "Intermediate",
+    "tags": [
+      "video",
+      "script",
+      "creative"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Creative",
+      "Marketing"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-10-04",
+    "copyCount": 1890
+  },
+  {
+    "id": 45,
+    "title": "Brand Identity Designer",
+    "slug": "brand-identity-designer",
+    "description": "Conceptualize brand identities.",
+    "content": "Act as a Senior Brand Strategist.\n\nContext:\nUse this to conceptualize a comprehensive brand identity for a new company in the [INDUSTRY] focusing on [TOPIC].\n\nObjective:\nEstablish the foundational brand elements, tone of voice, and visual direction before starting graphic design.\n\nInstructions:\n1. Define the Brand Archetype and core personality traits.\n2. Write the Brand Mission and Vision statements.\n3. Suggest a color palette (with hex codes) and explain the psychological reasoning behind them.\n4. Recommend typography styles (e.g., Serif for authority, Sans-serif for modern).\n5. Describe the tone of voice with examples of 'Do say / Don't say'.\n\nConstraints:\n- Ensure the identity aligns logically with the expectations of the [INDUSTRY].\n- Provide cohesive, actionable direction for a designer.\n\nOutput Format:\n- Brand Personality & Archetype.\n- Mission & Vision.\n- Visual Direction (Colors, Typography).\n- Tone of Voice Guidelines.",
+    "category": "Creative",
+    "subcategory": "Design",
+    "difficulty": "Advanced",
+    "tags": [
+      "branding",
+      "design",
+      "identity"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Design",
+      "Strategy"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-10-04",
+    "copyCount": 1560
+  },
+  {
+    "id": 46,
+    "title": "Excel Formula Expert",
+    "slug": "excel-formula-expert",
+    "description": "Solve complex Excel problems.",
+    "content": "Act as an Advanced Excel/Google Sheets Specialist.\n\nContext:\nUse this when struggling to write a complex formula to analyze data regarding [TOPIC]. Provide a description of your data layout and what you want to achieve.\n\nObjective:\nProvide the exact formula needed, explain how it works, and suggest better ways to structure the data if necessary.\n\nInstructions:\n1. Analyze the user's data structure and goal.\n2. Write the most efficient formula (using modern functions like XLOOKUP, FILTER, or dynamic arrays if applicable).\n3. Break down the syntax step-by-step so the user understands the logic.\n4. Highlight potential errors (e.g., #N/A, #VALUE!) and how to handle them using IFERROR.\n5. Suggest if a Pivot Table or Power Query would be a better tool for the job.\n\nConstraints:\n- Ensure syntax is correct for modern Excel (Microsoft 365).\n- Keep explanations clear for non-technical users.\n\nOutput Format:\n- The Formula.\n- How It Works (Step-by-step breakdown).\n- Error Handling.\n- Alternative Approach (if applicable).",
+    "category": "Data & Analytics",
+    "subcategory": "Excel",
+    "difficulty": "Beginner",
+    "tags": [
+      "excel",
+      "formulas",
+      "data"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Data Analysis",
+      "Productivity"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 3210
+  },
+  {
+    "id": 47,
+    "title": "Data Analysis Report",
+    "slug": "data-analysis-report",
+    "description": "Analyze datasets and generate reports.",
+    "content": "Act as a Senior Data Analyst.\n\nContext:\nUse this to interpret a given dataset or summary statistics regarding [TOPIC] and turn it into a cohesive business report.\n\nObjective:\nIdentify trends, anomalies, and actionable business insights from the provided data.\n\nInstructions:\n1. Review the data provided carefully.\n2. Identify the top 3 most significant trends or correlations.\n3. Identify any outliers or anomalies that require further investigation.\n4. Translate the numbers into a business narrative (what does this mean for the company?).\n5. Provide actionable recommendations based purely on the data.\n\nConstraints:\n- Do not make assumptions beyond what the data suggests without stating they are hypotheses.\n- Use a professional, objective tone.\n\nOutput Format:\n- Executive Summary.\n- Key Insights & Trends.\n- Anomalies/Outliers.\n- Data-Driven Recommendations.",
+    "category": "Data & Analytics",
+    "subcategory": "Data Analysis",
+    "difficulty": "Intermediate",
+    "tags": [
+      "data",
+      "analysis",
+      "report"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Data Analysis",
+      "Reporting"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 2340
+  },
+  {
+    "id": 48,
+    "title": "Dashboard Design",
+    "slug": "dashboard-design",
+    "description": "Design effective data dashboards.",
+    "content": "Act as a Business Intelligence Developer.\n\nContext:\nUse this to plan the layout and metrics for a BI dashboard (Tableau, PowerBI, Looker) focusing on [TOPIC] for an audience of [AUDIENCE].\n\nObjective:\nDesign a user-friendly dashboard structure that highlights the most critical KPIs and allows for intuitive drill-downs.\n\nInstructions:\n1. Identify the 'North Star' metric for the [AUDIENCE] regarding [TOPIC].\n2. Outline the top-level KPIs that should appear at the top of the dashboard.\n3. Suggest 3-4 specific charts (e.g., line chart for trends, bar chart for comparisons) and explain what data they should display.\n4. Recommend interactive filters (e.g., date range, region) needed for drill-downs.\n5. Provide UX best practices for color and layout to reduce cognitive load.\n\nConstraints:\n- Focus on clarity over complexity; avoid 'chart junk'.\n- Tailor the metrics specifically to the seniority of the [AUDIENCE].\n\nOutput Format:\n- Dashboard Goal & Audience.\n- Key Metrics (Top Row).\n- Recommended Charts & Visualizations.\n- Interactive Filters.\n- UX Guidelines.",
+    "category": "Data & Analytics",
+    "subcategory": "Visualization",
+    "difficulty": "Intermediate",
+    "tags": [
+      "dashboard",
+      "visualization",
+      "data"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Architecture",
+      "Data Analysis"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-10-04",
+    "copyCount": 1670
+  },
+  {
+    "id": 49,
+    "title": "Study Plan Creator",
+    "slug": "study-plan-creator",
+    "description": "Create a personalized study schedule.",
+    "content": "Act as an Expert Academic Coach.\n\nContext:\nUse this to create a structured study plan to learn [TOPIC] within a [TIMEFRAME].\n\nObjective:\nBreak down a complex subject into a manageable, highly efficient learning schedule utilizing active recall and spaced repetition.\n\nInstructions:\n1. Divide the [TOPIC] into logical modules or milestones.\n2. Create a week-by-week schedule based on the [TIMEFRAME].\n3. Suggest specific learning methods for different types of information (e.g., Feynman technique for concepts, Anki for rote memorization).\n4. Include dedicated review days and self-testing mechanisms.\n5. Provide a list of recommended resources or project ideas to apply the knowledge.\n\nConstraints:\n- Ensure the workload is realistic to prevent burnout.\n- Focus on active learning over passive reading/watching.\n\nOutput Format:\n- Learning Strategy Overview.\n- Week-by-Week Syllabus.\n- Study Techniques Recommendation.\n- Recommended Projects/Tests.",
+    "category": "Education",
+    "subcategory": "Study Planning",
+    "difficulty": "Beginner",
+    "tags": [
+      "study",
+      "planning",
+      "education"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Learning",
+      "Planning"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 2890
+  },
+  {
+    "id": 50,
+    "title": "Research Paper Analyzer",
+    "slug": "research-paper-analyzer",
+    "description": "Analyze and summarize academic papers.",
+    "content": "Act as a Postdoctoral Researcher.\n\nContext:\nUse this to distill the core findings, methodology, and limitations of a dense academic paper regarding [TOPIC]. Paste the abstract or full text.\n\nObjective:\nProvide a clear, accurate summary of the research that highlights its significance and validity without dumbing down the science.\n\nInstructions:\n1. Read the provided text.\n2. Summarize the research question and hypothesis in plain language.\n3. Briefly explain the methodology used, noting any obvious biases or sample size issues.\n4. Detail the primary results and conclusions drawn by the authors.\n5. Explain the practical implications of this research in the real world.\n\nConstraints:\n- Do not inject personal opinions; reflect only what the paper states.\n- Maintain academic rigor while improving readability.\n\nOutput Format:\n- Core Hypothesis.\n- Methodology Overview.\n- Key Findings.\n- Limitations.\n- Practical Implications.",
+    "category": "Education",
+    "subcategory": "Research",
+    "difficulty": "Advanced",
+    "tags": [
+      "research",
+      "academic",
+      "summary"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Research",
+      "Reading"
+    ],
+    "featured": false,
+    "popular": false,
+    "createdDate": "2026-10-04",
+    "copyCount": 1560
+  },
+  {
+    "id": 51,
+    "title": "Meeting Notes Summarizer",
+    "slug": "meeting-notes-summarizer",
+    "description": "Extract action items from meeting notes.",
+    "content": "Act as an Executive Assistant.\n\nContext:\nUse this to clean up raw, messy meeting transcripts or notes regarding [TOPIC] and turn them into a professional summary.\n\nObjective:\nOrganize unstructured notes into a clear summary, highlighting decisions made and assigning action items.\n\nInstructions:\n1. Read through the provided raw notes.\n2. Summarize the main purpose and overall outcome of the meeting in two sentences.\n3. List the key decisions that were agreed upon.\n4. Extract all action items, assigning them to the relevant person (if mentioned) with deadlines.\n5. Highlight any outstanding questions or issues that were tabled for next time.\n\nConstraints:\n- Be concise; cut out small talk and irrelevant details.\n- Use clear, professional formatting suitable for emailing to stakeholders.\n\nOutput Format:\n- Meeting Summary.\n- Key Decisions.\n- Action Items (Owner, Task, Deadline).\n- Parking Lot (Unresolved issues).",
+    "category": "Productivity",
+    "subcategory": "Meeting Notes",
+    "difficulty": "Beginner",
+    "tags": [
+      "meetings",
+      "notes",
+      "productivity"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude",
+      "Gemini"
+    ],
+    "useCases": [
+      "Productivity",
+      "Communication"
+    ],
+    "featured": false,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 3450
+  },
+  {
+    "id": 52,
+    "title": "Weekly Planning Assistant",
+    "slug": "weekly-planning-assistant",
+    "description": "Plan your week for maximum productivity.",
+    "content": "Act as a Productivity Coach.\n\nContext:\nUse this to take a disorganized list of tasks, goals, and obligations for the upcoming week and structure them into an optimized schedule.\n\nObjective:\nCreate a realistic, prioritized weekly plan that ensures deep work happens on critical goals while administrative tasks don't fall through the cracks.\n\nInstructions:\n1. Review the list of tasks and goals provided by the user.\n2. Categorize tasks using the Eisenhower Matrix (Urgent/Important).\n3. Suggest time-blocking schedules, dedicating large blocks to 'Deep Work' and smaller blocks to 'Shallow Work' (emails, admin).\n4. Advise on what tasks should be delegated or eliminated.\n5. Provide a daily theme or focus if applicable.\n\nConstraints:\n- Assume a standard 8-hour workday unless specified otherwise.\n- Build in buffer time and breaks to prevent burnout.\n\nOutput Format:\n- Priority Assessment (Top 3 goals for the week).\n- Task Categorization (Eisenhower Matrix).\n- Recommended Weekly Time-Block Schedule.\n- Tasks to Delegate/Drop.",
+    "category": "Productivity",
+    "subcategory": "Planning",
+    "difficulty": "Beginner",
+    "tags": [
+      "planning",
+      "weekly",
+      "productivity"
+    ],
+    "aiPlatforms": [
+      "ChatGPT",
+      "Claude"
+    ],
+    "useCases": [
+      "Planning",
+      "Time Management"
+    ],
+    "featured": true,
+    "popular": true,
+    "createdDate": "2026-10-04",
+    "copyCount": 2670
+  }
+]
